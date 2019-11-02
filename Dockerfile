@@ -41,7 +41,7 @@ RUN pip install --upgrade pip
 # manually update numpy
 RUN pip --no-cache-dir install -U numpy==1.14.5
 
-ARG TENSORFLOW_VERSION=2.0.0
+ARG TENSORFLOW_VERSION=1.14.0
 ARG TENSORFLOW_DEVICE=gpu
 ARG TENSORFLOW_APPEND=_gpu
 RUN pip --no-cache-dir install https://storage.googleapis.com/tensorflow/linux/${TENSORFLOW_DEVICE}/tensorflow${TENSORFLOW_APPEND}-${TENSORFLOW_VERSION}-cp27-none-linux_x86_64.whl
